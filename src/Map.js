@@ -38,7 +38,7 @@ export default () => {
 
         let layer = L.canvasLayer
           .scalarField(ndvi, {
-            color: chroma.scale("Spectral").domain(ndvi.range.reverse()),
+            // color: chroma.scale("Spectral").domain(ndvi.range.reverse()),
             opacity: 1,
             inFilter: v => v !== 0
           })
